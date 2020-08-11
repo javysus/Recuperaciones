@@ -41,7 +41,7 @@ public class CamaRecuperacionController{
     }
 
     @GetMapping("/CamaRecupFind")
-    public List<CamaRecuperacion> camasporSala(@RequestParam(name = "id") long id){
+    public Optional<CamaRecuperacion> obtenerCamaRec(@RequestParam(name = "id") long id){
         return servicio.obtenerCama(id);
     }
 
