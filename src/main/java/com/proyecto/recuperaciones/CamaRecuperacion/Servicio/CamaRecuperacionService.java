@@ -51,6 +51,6 @@ public class CamaRecuperacionService{
     }
 
     public Optional<CamaRecuperacion> obtenerCama(long id){
-        return repositorio.findById(id));
+        return repositorio.findById(id);
     }
 }
