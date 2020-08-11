@@ -15,4 +15,5 @@ public interface CamaRecuperacionRepo extends JpaRepository<CamaRecuperacion, Se
     public abstract List<CamaRecuperacion> findByDisponibleFalse();
     public abstract List<CamaRecuperacion> findByIdSalaAndDisponible(long idsala, boolean disponible);
     Optional <CamaRecuperacion> findByIdPaciente(Integer idPaciente);
+    Optional <CamaRecuperacion> findById(long Id);
 }

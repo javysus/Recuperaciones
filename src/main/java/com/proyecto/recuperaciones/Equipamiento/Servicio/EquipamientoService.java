@@ -41,4 +41,8 @@ public class EquipamientoService{
     public List<Equipamiento> obtenerEquipoSala(long sala){
         return repositorio.findByIdSala(sala);
     }
+
+    public List<Equipamiento> getAll(){
+        return repositorio.findAll();
+    }
 }

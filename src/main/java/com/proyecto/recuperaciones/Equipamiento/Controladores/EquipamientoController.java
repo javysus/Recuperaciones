@@ -44,4 +44,9 @@ public class EquipamientoController{
         return servicio.obtenerEquipoSala(sala);
     }
 
+    @GetMapping("/Equipamiento")
+    public List<Equipamiento> obtenerTodo(){
+        return servicio.getAll();
+    }
+
 }

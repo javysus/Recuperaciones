@@ -13,6 +13,8 @@ import org.springframework.transaction.annotation.Transactional;
 @Repository
 public interface EquipamientoRepo extends JpaRepository<Equipamiento, Serializable>{
     public abstract List<Equipamiento> findByIdSala(long idsala);
+
+    public abstract List<Equipamiento> findAll();
     
     @Transactional
     void deleteById(long id);

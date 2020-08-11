@@ -40,6 +40,12 @@ public class CamaRecuperacionController{
         return servicio.obtenerCamas(idSala, disponible);
     }
 
+    @GetMapping("/CamaRecupFind")
+    public List<CamaRecuperacion> camasporSala(@RequestParam(name = "id") long id){
+        return servicio.obtenerCama(id);
+    }
+
+
     @PostMapping("/CamaRecup/Agregar")
     public boolean agregarCama(@RequestBody CamaRecuperacion cama){
         return servicio.crear(cama);

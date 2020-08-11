@@ -49,4 +49,8 @@ public class CamaRecuperacionService{
     public Optional<CamaRecuperacion> obtenerCamaPaciente(Integer idPaciente){
         return repositorio.findByIdPaciente(idPaciente);
     }
+
+    public Optional<CamaRecuperacion> obtenerCama(long id){
+        return repositorio.findById(id));
+    }
 }
