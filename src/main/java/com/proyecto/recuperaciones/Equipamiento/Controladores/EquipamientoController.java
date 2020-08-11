@@ -1,6 +1,8 @@
 package com.proyecto.recuperaciones.Equipamiento.Controladores;
 
 import java.util.List;
+import java.util.Optional;
+
 
 import com.proyecto.recuperaciones.Equipamiento.Modelos.Equipamiento;
 import com.proyecto.recuperaciones.Equipamiento.Servicio.EquipamientoService;
