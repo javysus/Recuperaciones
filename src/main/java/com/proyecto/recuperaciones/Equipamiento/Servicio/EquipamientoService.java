@@ -46,7 +46,7 @@ public class EquipamientoService{
         return repositorio.findAll();
     }
 
-    public Optional <CamaRecuperacion> obtenerporId(long Id){
+    public Optional<CamaRecuperacion> obtenerPorId(long Id){
         return repositorio.findById(Id);
     }
 }
