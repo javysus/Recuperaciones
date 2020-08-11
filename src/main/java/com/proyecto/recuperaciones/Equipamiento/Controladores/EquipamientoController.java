@@ -50,7 +50,7 @@ public class EquipamientoController{
     }
 
     @GetMapping("/EquipamientoFind")
-    public Optional <CamaRecuperacion> encontrar(@RequestParam(name="id" long id){
+    public Optional <CamaRecuperacion> encontrar(@RequestParam(name="id") long id){
         return servicio.obtenerPorId(id);
     }
 
