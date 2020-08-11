@@ -15,6 +15,8 @@ public interface EquipamientoRepo extends JpaRepository<Equipamiento, Serializab
     public abstract List<Equipamiento> findByIdSala(long idsala);
 
     public abstract List<Equipamiento> findAll();
+
+    Optional <Equipamiento> findById(long Id);
     
     @Transactional
     void deleteById(long id);
