@@ -12,6 +12,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface CamaRecuperacionRepo extends JpaRepository<CamaRecuperacion, Serializable>{
     public abstract List<CamaRecuperacion> findByDisponibleTrue();
+    public abstract List<CamaRecuperacion> findByDisponibleFalse();
     public abstract List<CamaRecuperacion> findByIdSalaAndDisponible(long idsala, boolean disponible);
     Optional <CamaRecuperacion> findByIdPaciente(Integer idPaciente);
 }

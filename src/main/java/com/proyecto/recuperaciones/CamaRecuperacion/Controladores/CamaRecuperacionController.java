@@ -30,6 +30,11 @@ public class CamaRecuperacionController{
         return servicio.obtenerDisponibles();
     }
 
+    @GetMapping("/CamaRecup/NoDisponibles")
+    public List<CamaRecuperacion> camasNoDisponibles(){
+        return servicio.obtenerNoDisponibles();
+    }
+
     @GetMapping("/CamaRecup")
     public List<CamaRecuperacion> camasporSala(@RequestParam(name = "sala") long idSala, @RequestParam(name = "disponible") boolean disponible){
         return servicio.obtenerCamas(idSala, disponible);

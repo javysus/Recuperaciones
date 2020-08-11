@@ -38,6 +38,10 @@ public class CamaRecuperacionService{
         return repositorio.findByDisponibleTrue();
     }
 
+    public List<CamaRecuperacion> obtenerNoDisponibles(){
+        return repositorio.findByDisponibleFalse();
+    }
+
     public List<CamaRecuperacion> obtenerCamas(long sala, boolean disponibilidad){
         return repositorio.findByIdSalaAndDisponible(sala, disponibilidad);
     }
