@@ -16,4 +16,6 @@ public interface SalaRecuperacionRepo extends JpaRepository<SalaRecuperacion, Se
 
     @Query("SELECT s from SalaRecuperacion s WHERE s.disponibles > 0")
     public abstract List<SalaRecuperacion> findSalasCamasDisponibles();
+
+    Optional <SalaRecuperacion> findById(long Id);
 }

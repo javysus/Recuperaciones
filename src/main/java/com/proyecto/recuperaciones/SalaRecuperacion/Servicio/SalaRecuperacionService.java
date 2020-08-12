@@ -32,4 +32,8 @@ public class SalaRecuperacionService{
     public List<SalaRecuperacion> obtenerSalas(){
         return repositorio.findAll();
     }
+
+    public Optional <SalaRecuperacion> obtenerSala(long id){
+        return repositorio.findById(id);
+    }
 }

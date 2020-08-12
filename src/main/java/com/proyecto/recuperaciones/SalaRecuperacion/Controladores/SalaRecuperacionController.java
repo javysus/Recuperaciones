@@ -34,6 +34,11 @@ public class SalaRecuperacionController{
         return servicio.obtenerSalasConCamas();
     }
 
+    @GetMapping("/SalasRecupFind")
+    public Optional <SalaRecuperacion> getSala(@RequestParam(name = "id") long id){
+        return servicio.obtenerSala(id);
+    }
+
     @PutMapping("/SalasRecup/Actualizar")
     public boolean actualizarSala(@RequestBody SalaRecuperacion sala){
         return servicio.actualizar(sala);
