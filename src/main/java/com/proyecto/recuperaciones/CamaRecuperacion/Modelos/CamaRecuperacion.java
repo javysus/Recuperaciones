@@ -25,6 +25,9 @@ public class CamaRecuperacion{
     @Column(name="id_paciente")
     private Integer idPaciente;
 
+    @Column(name="id_personalR")
+    private Integer idPersonalR; 
+
     @Column(name="fechauso")
     private Date fecha;
 
@@ -32,11 +35,12 @@ public class CamaRecuperacion{
 
     }
 
-    public CamaRecuperacion(long id, long idSala, boolean disponible, Integer idPaciente, Date fecha) {
+    public CamaRecuperacion(long id, long idSala, boolean disponible, Integer idPaciente, Integer idPersonalR, Date fecha) {
         this.id = id;
         this.idSala = idSala;
         this.disponible = disponible;
         this.idPaciente = idPaciente;
+        this.idPersonalR = idPersonalR;
         this.fecha = fecha;
     }
 
@@ -72,6 +76,13 @@ public class CamaRecuperacion{
         this.idPaciente = idPaciente;
     }
 
+    public Integer getIdPersonalR(){
+        return idPersonalR;
+    }
+
+    public void setIdPersonalR(Integer idPersonalR){
+        this.idPersonalR = idPersonalR;
+    }
     public Date getFechaUso(){
         return fecha;
     }
